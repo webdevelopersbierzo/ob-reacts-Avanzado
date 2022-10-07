@@ -24,13 +24,13 @@ const useList = (initialValue = []) => {
     // short list's elements
     const sortList = ()=>{
        
-        const listSort = value.sort((a,b)=>a-b)
+        const listSort = value.sort((a,b)=>a.localeCompare(b))
         setValue([...listSort]);
     }
     // Short list's elements inverted
     const invertedList =()=>{
        
-        const listInverted = value.sort((a,b)=>b-a);
+        const listInverted = value.sort((a,b)=>b.localeCompare(a));
         setValue([...listInverted])
         
     }
