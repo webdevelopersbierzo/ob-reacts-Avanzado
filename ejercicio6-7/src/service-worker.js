@@ -70,3 +70,11 @@ self.addEventListener('message', (event) => {
 });
 
 // Any other custom service worker logic can go here.
+
+const version = 'app-ejercicio6-7-v1'
+self.addEventListener('Install', event=>{
+  console.log(`Instalando version ${version}`)
+});
+self.addEventListener('activate', event =>{
+  console.log(`Activada version ${version}`)
+})
